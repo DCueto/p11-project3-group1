@@ -4,7 +4,7 @@ body, html{
 }
 
 html{
-  scroll-behavior: smooth;
+  scroll-behavior: smooth !important;
 }
 
 @font-face {
@@ -430,6 +430,66 @@ html{
   background-color:rgba(128, 0, 0, 0.514);
   border: 1px solid rgb(255, 0, 0);
 }
+
+
+.select-styles{
+  appearance:none;
+  -webkit-appearance:none;
+  -moz-appearance:none;
+ }
+
+ .content-select{
+   appearance: none;
+   -webkit-appearance: none;
+   -moz-appearance: none;
+ }
+
+ .content-select select::-ms-expand {
+   display: none;
+ }
+
+ .content-select{
+   max-width: 250px;
+   position: relative;
+ }
+
+ .content-select select{
+   display: inline-block;
+   width:70%;
+   cursor: pointer;
+     padding: 7px 10px;
+     height: 42px;
+     outline: 0;
+     border: 0;
+   border-radius: 0;
+   background: #2958abcf;
+   color: #7B7B7B;
+   font-size:0.7em;
+   color: #EAE4E4;
+   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   border:2px solid rgba(118, 133, 168, 0.2);
+     border-radius: 50%;
+     position: relative;
+     transition: all 0.25s ease;
+ }
+ .content-select i{
+   position: absolute;
+   right: 1px;
+   top: calc(49% - 13px);
+   width: 8px;
+   height: 8px;
+   display: block;
+   border-left:4px solid #eae9f04d;
+   border-bottom:4px solid #dddce952;
+   transform: rotate(-45deg);
+   transition: all 0.25s ease;
+ }
+ .content-select:hover i{
+   margin-top: 3px;
+ }
+ .content-select select:hover{
+   background: #1964B4;
+ }
 
 
 @media (max-width: 800px) {
